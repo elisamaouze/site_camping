@@ -1,0 +1,326 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(249, 45%, 10%);
+}
+
+#main {
+    width: 740px;
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#main2 {
+    width: 740px;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.titleBox {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleBox h1 {
+    color: black;
+    font-size: 30px;
+    margin: 0;
+}
+
+.titleBox p {
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.inputBox {
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    width: 400px;
+    height: 28px;
+    border: 1px solid rgb(200, 200, 200);
+    outline: none;
+    font-weight: lighter;
+    padding: 1px 10px;
+    padding-left: 35px;
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.input[type=email] {
+    background: url("./image/mail.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+    outline: none;
+}
+
+.input[type=password] {
+    background: url("./image/password.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+}
+
+.input:focus {
+    border-color: blue;
+}
+
+.inputName {
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+    margin-top: -44px;
+    background-color: white;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.errorMessage {
+    font-size: 14px;
+    margin: 5px;
+    color: red;
+}
+
+.btn {
+    width: 300px;
+    padding: 15px 20px;
+    margin-top: 50px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: green-800;
+}
+
+.switchPage {
+    display: flex;
+    margin-top: 20px;
+}
+
+.switchPage p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+    margin-right: 3px;
+}
+
+.switchPage a {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.wave-group {
+  position: relative;
+}
+
+.wave-group .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.wave-group .input:focus {
+  outline: none;
+}
+
+.wave-group .label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  display: flex;
+}
+
+.wave-group .label-char {
+  transition: 0.2s ease all;
+  transition-delay: calc(var(--index) * .05s);
+}
+
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5264AE;
+}
+
+.wave-group .bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.wave-group .bar:before,.wave-group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: black;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+  left: 50%;
+}
+
+.wave-group .bar:after {
+  right: 50%;
+}
+
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+button {
+  cursor: pointer;
+  font-weight: 800;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 4px 20px;
+  border-radius: 100px;
+  background: white;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+button:hover {
+  background: white;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+.button-name {
+ align-items: center;
+ appearance: none;
+ background-color: #FCFCFD;
+ border-radius: 4px;
+ border-width: 0;
+ box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+ box-sizing: border-box;
+ color: #36395A;
+ cursor: pointer;
+ display: inline-flex;
+ font-family: "JetBrains Mono",monospace;
+ height: 48px;
+ justify-content: center;
+ line-height: 1;
+ list-style: none;
+ overflow: hidden;
+ padding-left: 16px;
+ padding-right: 16px;
+ position: relative;
+ text-align: left;
+ text-decoration: none;
+ transition: box-shadow .15s,transform .15s;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ white-space: nowrap;
+ will-change: box-shadow,transform;
+ font-size: 18px;
+}
+
+.button-name:focus {
+ box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-name:hover {
+ box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+ transform: translateY(-2px);
+}
+
+.button-name:active {
+ box-shadow: #D6D6E7 0 3px 7px inset;
+ transform: translateY(2px);
+}

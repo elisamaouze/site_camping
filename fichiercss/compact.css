@@ -1,0 +1,84 @@
+@import "compass/css3";
+@charset "utf-8";
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* En-tête du tableau */
+table th {
+  background-color: #38cd87;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Lignes impaires */
+table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Lignes au survol */
+table tr:hover {
+  background-color: #38cd87;
+}
+
+/* Lien dans le tableau */
+table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Lien au survol */
+table a:hover {
+  text-decoration: underline;
+}
+
+/* Styles pour les tableaux de petite taille */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
